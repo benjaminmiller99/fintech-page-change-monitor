@@ -51,3 +51,7 @@ The quick start is above. For an actual deployment, you will also need the follo
 - **Fintech Page Change Monitor:** By default, mail uses a **shared** verified sender. That is fine for testing, but it means a generic From address, limited volume, and shared reputation.
 - **Fintech Page Change Monitor:** For production, verify **your own** domain: `POST /v1/email/domain/verify` with `{"domain":"mail.yourco.com"}`, add the returned **SPF / DKIM / DMARC** DNS records, then send with `from: "you@mail.yourco.com"`.
 - **Fintech Page Change Monitor:** Use a dedicated subdomain and **warm it up** by ramping volume over a few days to protect deliverability.
+
+## Further reading
+
+- [Fintech Support Tickets — 3 Review Gates for Semantic API Dedupe](docs/fintech-support-tickets-3-review-gates-for-semant-tir6qj.md)
